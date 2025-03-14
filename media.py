@@ -3,7 +3,12 @@ ganhos = [4000, 750, 1200]
 
 
 def somatorio(lista):
-    return sum(lista)
+    soma = 0
+    contador = 0
+    while (contador < len(lista)):
+        soma = soma + lista[contador]
+        contador = contador + 1
+    return soma 
 
 total_custos = somatorio(custos)
 total_ganhos = somatorio(ganhos)
