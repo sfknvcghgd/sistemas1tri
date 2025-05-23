@@ -1,6 +1,6 @@
-print("1 - Opção 1")
-print("2 - Opção 2")
-print("3 - Opção 3")
+print("1 - fácil")
+print("2 - médio")
+print("3 - dificio")
 opcao = int(input("Digite a opção desejada:"))
 if (opcao == 1):
     print("Você escolheu 1")

@@ -1,7 +1,26 @@
 import random 
 
 # Iniciando minhas variáveis  
-palavras = ["escola", "estojo", "professor", "aluno", "cachorro", "militar"]
+palavras = []
+
+print("1-comidas")
+print("2-ambiente")
+print("3-tecnologia")
+
+opcao=int(input("digite o tem desejado:"))
+if opcao == 1:
+    arquivo = open ("comidas.txt" , "r")
+elif opcao == 2:
+    arquivo = open ("tema2.txt" , "r")
+elif opcao == 3:
+    arquivo = open ("tema3.txt" , "r")
+else:
+    print("opção ines,selecionado opção1")
+    arquivo = open ("comidas.txt" , "r")
+
+for linha in arquivo :
+    palavras.append(linha.strip())
+
 palavra = random.choice(palavras)
 limite_tentativas = len(palavra) + 5
 acertou = False
